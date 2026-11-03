@@ -1240,7 +1240,63 @@ body {
         height: 19px !important;
     }
 }
+/* Contenedor general */
+.capsula-tiempo {
+    width: 100%;
+    max-width: 480px; /* Más compacto para que no ocupe toda la pantalla */
+    margin: 0 auto;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
 
+/* Título sutil, espACIado y elegante */
+.preparate {
+    color: #8c7853; /* Dorado oscuro / bronce suave */
+    font-weight: 400;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    letter-spacing: 3px; /* Letras separadas para mayor elegancia */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Grid adaptable y proporcionado */
+.timer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Elemento individual sin cajas pesadas (efecto flotante/limpio) */
+.timer-item {
+    background: transparent; /* Sin fondo sólido */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+
+/* Números más finos, sutiles y en color dorado oscuro */
+.timer-item span {
+    font-size: clamp(1.2rem, 5vw, 1.8rem); /* Reducidos de tamaño para que no se vean gigantes */
+    font-weight: 300; /* Tipografía más delgada/delicada */
+    line-height: 1.1;
+    color: #7a653f; /* Tono dorado oscuro / ocre elegante */
+}
+
+/* Etiquetas pequeñas y discretas */
+.timer-label {
+    font-size: clamp(0.55rem, 2vw, 0.75rem);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    color: #9e8e70; /* Dorado grisáceo suave */
+    white-space: nowrap;
+}
 </style>
 </head>
 <body>
