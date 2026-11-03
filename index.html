@@ -1240,61 +1240,61 @@ body {
         height: 19px !important;
     }
 }
-/* Contenedor general */
+/* Contenedor principal ajustado a pantallas móviles */
 .capsula-tiempo {
     width: 100%;
-    max-width: 480px; /* Más compacto para que no ocupe toda la pantalla */
+    max-width: 300px; /* Muy compacto para que encaje delicadamente en móviles */
     margin: 0 auto;
-    padding: 15px 10px;
+    padding: 6px 4px;
     box-sizing: border-box;
     text-align: center;
 }
 
-/* Título sutil, espACIado y elegante */
+/* Título delicado */
 .preparate {
-    color: #8c7853; /* Dorado oscuro / bronce suave */
-    font-weight: 400;
-    font-size: clamp(0.9rem, 3vw, 1.1rem);
-    letter-spacing: 3px; /* Letras separadas para mayor elegancia */
-    margin-bottom: 15px;
+    color: #8c7853; /* Dorado oscuro */
+    font-weight: 300;
+    font-size: clamp(0.65rem, 2vw, 0.8rem);
+    letter-spacing: 2px;
+    margin-bottom: 6px;
     text-transform: uppercase;
 }
 
-/* Grid adaptable y proporcionado */
+/* Grid adaptable para 4 columnas */
 .timer-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    gap: 4px; /* Espacio mínimo entre los números */
     width: 100%;
     box-sizing: border-box;
 }
 
-/* Elemento individual sin cajas pesadas (efecto flotante/limpio) */
+/* Elementos del timer */
 .timer-item {
-    background: transparent; /* Sin fondo sólido */
-    padding: 5px;
+    background: transparent;
+    padding: 2px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 0;
+    min-width: 0; /* Previene desbordamiento en pantallas pequeñas */
 }
 
-/* Números más finos, sutiles y en color dorado oscuro */
+/* Números pequeños, finos y dorados */
 .timer-item span {
-    font-size: clamp(1.2rem, 5vw, 1.8rem); /* Reducidos de tamaño para que no se vean gigantes */
-    font-weight: 300; /* Tipografía más delgada/delicada */
-    line-height: 1.1;
-    color: #7a653f; /* Tono dorado oscuro / ocre elegante */
+    font-size: clamp(0.8rem, 2.8vw, 1.1rem); /* Tamaño reducido y fluido para pantallas móviles */
+    font-weight: 300;
+    line-height: 1;
+    color: #7a653f; /* Dorado oscuro / ocre */
 }
 
-/* Etiquetas pequeñas y discretas */
+/* Etiquetas minimalistas */
 .timer-label {
-    font-size: clamp(0.55rem, 2vw, 0.75rem);
+    font-size: clamp(0.42rem, 1.4vw, 0.52rem);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 4px;
-    color: #9e8e70; /* Dorado grisáceo suave */
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+    color: #9e8e70;
     white-space: nowrap;
 }
 </style>
