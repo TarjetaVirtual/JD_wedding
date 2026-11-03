@@ -1210,7 +1210,36 @@ body {
         font-size: 16px;
     }
 }
+/* BOTÓN DE MÚSICA: ESQUINA INFERIOR DERECHA */
+.music-player {
+    display: none;
+    position: fixed !important;
+    right: 8px !important;
+    bottom: 8px !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    z-index: 99998;
+    margin: 0 !important;
+}
 
+.play-button {
+    width: 21px !important;
+    height: 21px !important;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .music-player {
+        right: 6px !important;
+        bottom: 6px !important;
+    }
+
+    .play-button {
+        width: 19px !important;
+        height: 19px !important;
+    }
+}
 
 </style>
 </head>
@@ -1602,7 +1631,7 @@ body {
 
 <div class="seccion-galeria" style="width: 100%; padding: 60px 0; background-color: #ffffff; text-align: center; overflow: hidden;">
 
-    <h2 class="itinerario-titulo" style="margin-bottom: 40px; font-family: 'Alex Brush', cursive; font-size: 2.2rem; color: #8d7a64;">Nuestra Historia</h2>
+    <h2 class="itinerario-titulo" style="margin-bottom: 40px; font-family: 'Alex Brush', cursive; font-size: 2.2rem; color: #8d7a64;">Galería de Fotos</h2>
 
     <!-- Contenedor del carrusel (ahora con cursor de agarre) -->
     <div class="carrusel-wrapper" style="position: relative; max-width: 1200px; margin: 0 auto; padding: 0 20px; cursor: grab;">
